@@ -30,7 +30,7 @@ const ParkSearch = () => {
   const [addFavoritePark] = useMutation(ADD_FAVORITE_PARK);
   
   const handleSubmit = async (query) => {
-    const parks = await searchParks(query, import.meta.env.VITE_PARK_API_KEY);
+    const parks = await searchParks(query, 'bwpbmquKAwOulp2IqIoT6fSL9HFE4W0aEkJaRu2r');
     if (parks.data.length === 0) {
       setErrorDisplay({ display: "block" });
       throw new Error("No parks found with that search!");

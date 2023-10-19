@@ -3,7 +3,7 @@ import { useMemo } from "react";
 
 const MapComponent = (props) => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: import.meta.env.VITE_API_KEY,
+    googleMapsApiKey: 'AIzaSyBquBjUVkBn-4Gc_hnRAeYROmGjTa99K3Q',
   });
   const latitude = parseInt(props.latitude);
   const longitude = parseInt(props.longitude);
