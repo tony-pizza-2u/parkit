@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "NPM_CONFIG_PRODUCTION=false && vite build",
+    "build": "NPM_CONFIG_PRODUCTION=false && npm install && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
